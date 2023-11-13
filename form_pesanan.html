@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Web Page</title>
+
+
+
+    <Style>
+        .header {
+            background-color: orange;
+            margin: 10px;
+            padding: 10px 10px;
+            font-family: Arial;
+            text-align: center;
+        }
+
+        .sidebar {
+            float: left;
+            width: 25%;
+            height: 100%;
+            float: left;
+        }
+
+        .wrap .badan .content {
+            float: left;
+            height: 100%;
+            width: 75%;
+        }
+
+        .responsive {
+            width: 100%;
+            height: auto;
+        }
+
+        .w {
+            text-align: center;
+        }
+    </Style>
+</head>
+
+<body>
+
+    <div class="header">
+        <nav>
+            <br> Home | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Generate Link | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Transaction History | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Policy | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Log Out &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </nav>
+    </div>
+
+
+    <div class="sidebar">
+        <table>
+            <tr>
+                <td> <img src="image/hp.jpg" alt="Nature" class="responsive"> </td>
+
+            </tr>
+
+            <tr>
+                <td><button type="submit">Upload Picture</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="content">
+        <fieldset>
+            <ul style="list-style-type: none;">
+                <li><label>Tittle Here &nbsp;&nbsp;&nbsp; : &nbsp;<input type="text" name="fullname"></label>
+                </li>
+                <li>&nbsp;</li>
+                <li><label>Description &nbsp;&nbsp;&nbsp; : &nbsp;<input type="text" name="fullname"></label>
+                </li>
+                <li>&nbsp;</li>
+                <li><label>Account Number &nbsp;&nbsp;&nbsp; : &nbsp;<input type="text" name="fullname"></label>
+                </li>
+                <li>&nbsp;</li>
+                <li>Bank :
+                    <select name="Bank">
+                        <option>BRI</option>
+                        <option>BCA</option>
+                        <option>Mandiri</option>
+                    </select>
+                </li>
+                <li>&nbsp;</li>
+                <li><label>Account Holder &nbsp;&nbsp;&nbsp; : &nbsp;<input type="text" name="fullname"></label>
+                </li>
+            </ul>
+            <p>Transaction :
+                <select name="Transaksi">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+            </p>
+            <h4>*if the transaction is for 3 person, choose 3from the drop-down list</h4>
+            <ul style="list-style-type: none; color: green;">
+                <li>
+                    <input type="checkbox" name="phone">
+                    <label>send to mobile phone</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="email">
+                    <label> send to email</label>
+                </li>
+            </ul>
+            <ul style="list-style-type: none;">
+                <li><label>Send to Mobile Phone <input type="text" name="fullname"></label></li>
+                <li>&nbsp;</li>
+                <li><label>Send to Email <input type="text" name="fullname"></label></li>
+            </ul>
+        </fieldset>
+        <br><br>
+        <div class="w">
+            <button type="submit" style="background-color: green;">Generate Nabr Link</button>
+        </div>
+    </div>
+</body>
+
+</html>

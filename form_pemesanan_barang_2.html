@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Web Page</title>
+
+    <Style>
+        .header {
+            background-color: orange;
+            margin: 10px;
+            padding: 10px 10px;
+            font-family: Arial;
+            text-align: center;
+        }
+
+        .sidebar {
+            float: left;
+            width: 25%;
+            height: 100%;
+            float: left;
+        }
+
+        .wrap .badan .content {
+            float: left;
+            height: 100%;
+            width: 75%;
+        }
+
+        .p {
+            float: left;
+            text-align: right;
+        }
+
+        .responsive {
+            width: 100%;
+            height: auto;
+        }
+
+        .w {
+            text-align: center;
+        }
+    </Style>
+</head>
+
+<body>
+
+    <div class="header">
+        <br> Home | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Generate Link | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Transaction History | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Policy | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Log Out &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+
+
+    <div class="sidebar">
+        <table>
+            <tr>
+                <td> <img src="image/hp.jpg" alt="Nature" class="responsive"> </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="content">
+        <fieldset>
+            <ul style="list-style-type: none;">
+                <li>Tittle Here &nbsp;&nbsp;&nbsp; : &nbsp; Realme C21 </li>
+                <li>&nbsp;</li>
+                <li>Description &nbsp;&nbsp;&nbsp; : &nbsp;
+
+                <li> Year &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</li>
+                <li> Model &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</li>
+                <li> Condition &nbsp;&nbsp;&nbsp;&nbsp; :</li>
+                <li>&nbsp;</li>
+                <li><label>Total Amount &nbsp;&nbsp;&nbsp; : &nbsp; 100jt</label></li>
+                <li>&nbsp;</li>
+                <li><label>Pay To &nbsp;&nbsp;&nbsp; : &nbsp;123-456-789-0</label></li>
+                <li>&nbsp;</li>
+                <li>Payment Type :
+                    <select name="Bank">
+                        <option>Visa Debit</option>
+                        <option>Bank Debit</option>
+                        <option>Qris</option>
+                    </select>
+                </li>
+                <li>&nbsp;</li>
+                <li><label>Account Holder &nbsp;&nbsp;&nbsp; : &nbsp;<input type="text" name="fullname"></label>
+                </li>
+                <li>&nbsp;</li>
+                <li><label>Account No &nbsp;&nbsp;&nbsp; : &nbsp;<input type="text" name="fullname"></label></li>
+                <li>&nbsp;</li>
+            </ul>
+
+            <h4>*if the transaction is for 3 person, choose 3from the drop-down list</h4>
+            <ul style="list-style-type: none; color: green;">
+                <li>
+                    <input type="checkbox" name="phone">
+                    <label>send to mobile phone</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="email">
+                    <label>send to email</label>
+                </li>
+            </ul>
+
+            <div class="content">
+                <p class="left-align">
+                <ul style="list-style-type: none;">
+                    <li><label>Send to Mobile Phone <input type="text" name="fullname"></label></li>
+                    <li>&nbsp;</li>
+                    <li><label>Send to Email <input type="text" name="fullname"></label></li>
+                </ul>
+            </div>
+        </fieldset>
+    </div>
+
+    <div class="w">
+        <button type="submit" style="background-color: green;">Generate Nabr Link</button>
+    </div>
+
+
+</body>
+
+</html>
